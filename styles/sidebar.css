@@ -17,10 +17,17 @@
     align-items: center;
     flex-direction: column;
     cursor: pointer;
+    font-size: 10px;
   }
 
-  .sidebar-link:hover {
-    background-color: rgb(235, 235, 235);
+  .sidebar-link:hover,
+  .sidebar-link-home {
+    background-color: rgb(242, 242, 242);
+    border-radius: 10px;
+  }
+
+  .sidebar-link-home:hover {
+    background-color: rgb(230, 230, 230);
   }
 
   .sidebar-link img {
@@ -31,11 +38,16 @@
   .sidebar-link div {
     font-size: 10px;
   }
+
+  .hidden,
+  hr {
+    display: none;
+  }
 }
 
 @media (min-width: 1200px) {
   body {
-    padding-left: 240px;
+    padding-left: 270px;
   }
 
   .sidebar {
@@ -44,20 +56,65 @@
     bottom: 0;
     top: 55px;
     background-color: white;
-    width: 216px;
+    width: 228px;
     z-index: 200;
-    padding-top: 13px;
+    overflow-y: auto;
+    padding: 12px;
+    scrollbar-width: none;
+    scrollbar-color: #909090 transparent;
   }
+
+  .sidebar:hover {
+    scrollbar-width: thin;
+  }
+
+  /* .sidebar-section {
+    margin: 10px;
+  } */
 
   .sidebar-link {
     display: flex;
     align-items: center;
     cursor: pointer;
-    padding: 8px 24px;
+    width: 180px;
+    padding: 8px 10px;
   }
 
-  .sidebar-link:hover {
-    background-color: rgb(235, 235, 235);
+  .sidebar-link:hover,
+  .sidebar-link-home {
+    background-color: rgb(242, 242, 242);
+    border-radius: 10px;
+  }
+
+  .sidebar-link-home {
+    font-weight: 500;
+  }
+
+  .sidebar-link-home:hover {
+    background-color: rgb(230, 230, 230);
+  }
+
+  .sidebar-link:active {
+    background-color: rgb(220, 220, 220);
+  }
+
+  .sidebar-section-title {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0px;
+    /* margin-bottom: 4px;
+    margin-top: 8px; */
+  }
+
+  .not-clickable {
+    padding: 8px;
+  }
+
+  .arrow {
+    height: 16px;
+    width: 16px;
+    margin-left: 8px;
+    margin-right: 0px;
   }
 
   .sidebar-link img {
@@ -65,7 +122,27 @@
     margin-right: 20px;
   }
 
-  .sidebar-link div {
+  .sidebar-link span {
     font-size: 14px;
+  }
+
+  hr {
+    border: none;
+    height: 1px;
+    background-color: rgb(229, 229, 229);
+  }
+
+  .subscriptions {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .subscriptions img {
+    border-radius: 20px;
+  }
+
+  .hidden2 {
+    display: none;
   }
 }
