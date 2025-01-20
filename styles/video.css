@@ -41,6 +41,7 @@
 
 .thumbnail {
   width: 100%;
+  border-radius: 12px;
 }
 
 .channel-picture {
