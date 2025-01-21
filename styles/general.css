@@ -11,24 +11,24 @@ body {
   padding-right: 24px;
 }
 
-/* for small sidebar */
-@media (max-width: 1200px) {
-  body {
-    padding-left: 96px;
-  }
-}
-
-/* for hidden sidebar */
-@media (min-width: 500px) and (max-width: 792px) {
-  body {
-    padding-left: 24px;
-  }
-}
-
 /* for mobile */
 @media (max-width: 449px) {
   body {
     padding-left: 2px;
     padding-right: 2px;
+  }
+}
+
+/* for hidden sidebar */
+@media (min-width: 449.02px) and (max-width: 792px) {
+  body {
+    padding-left: 24px;
+  }
+}
+
+/* for small sidebar */
+@media (min-width: 792.02px) and (max-width: 1200px) {
+  body {
+    padding-left: 96px;
   }
 }

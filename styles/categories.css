@@ -33,21 +33,23 @@
   color: white;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 449px) {
   .categories {
-    left: 96px;
+    left: 0;
+    right: 0;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }
 
-@media (min-width: 500px) and (max-width: 792px) {
+@media (min-width: 449.02px) and (max-width: 792px) {
   .categories {
     left: 24px;
   }
 }
 
-@media (max-width: 449px) {
+@media (min-width: 792px) and (max-width: 1200px) {
   .categories {
-    left: 8px;
-    right: 8px;
+    left: 96px;
   }
 }
