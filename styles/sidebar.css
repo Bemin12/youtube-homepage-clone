@@ -68,10 +68,6 @@
     scrollbar-width: thin;
   }
 
-  /* .sidebar-section {
-    margin: 10px;
-  } */
-
   .sidebar-link {
     display: flex;
     align-items: center;
@@ -144,5 +140,15 @@
 
   .hidden2 {
     display: none;
+  }
+}
+
+@media (max-width: 792px) {
+  .sidebar {
+    display: none;
+  }
+
+  body {
+    padding-left: 24px;
   }
 }

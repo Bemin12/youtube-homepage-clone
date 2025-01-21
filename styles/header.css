@@ -12,7 +12,9 @@
   z-index: 100;
 
   background-color: white;
-  border-bottom: 1px solid rgb(222, 222, 222);
+  /* border-bottom: 1px solid rgb(222, 222, 222); */
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .left-section {
@@ -22,7 +24,6 @@
 
 .hamburger-menu {
   height: 24px;
-  margin-left: 16px;
   margin-right: 16px;
   padding: 8px;
   cursor: pointer;
@@ -87,8 +88,6 @@
 
 .search-button,
 .voice-search-button,
-.upload-icon-container,
-.youtube-apps-icon-container,
 .notifications-icon-container {
   display: flex;
   justify-content: center;
@@ -139,6 +138,10 @@
   background-color: rgb(217, 217, 217);
 }
 
+.voice-search-button:active {
+  background-color: rgb(195, 195, 195);
+}
+
 .voice-search-icon {
   height: 24px;
 }
@@ -148,32 +151,96 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 10px;
   flex-shrink: 0;
 }
 
-.upload-icon,
-.youtube-apps-icon,
+.create-button {
+  display: flex;
+  align-items: center;
+  background-color: rgb(240, 240, 240);
+  padding: 6px 12px;
+  /* padding-left: 16px;
+  padding-right: 16px; */
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.create-button:hover {
+  background-color: rgb(229, 229, 229);
+}
+
+.create-button:active {
+  background-color: rgb(206, 206, 206);
+}
+
 .notifications-icon {
   height: 24px;
 }
 
 .notifications-icon-container {
   position: relative;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.notifications-icon-container:hover {
+  background-color: rgb(229, 229, 229);
+  border-radius: 50px;
+}
+
+.notifications-icon-container:active {
+  background-color: rgb(206, 206, 206);
 }
 
 .notifications-count {
   position: absolute;
-  top: -2px;
-  right: -5px;
+  top: 2px;
+  right: -2px;
   background-color: rgb(225, 0, 45);
   color: white;
   font-size: 11px;
   padding: 2px 5px;
+  border: 2px solid white;
   border-radius: 10px;
 }
 
 .current-user-picture {
   height: 32px;
   border-radius: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 656px) {
+  .header {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+  .search-button,
+  .voice-search-button {
+    background: none;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+    margin-right: 0px;
+  }
+
+  .middle-section {
+    margin-left: 0px;
+    margin-right: 0px;
+    flex: 0;
+  }
+
+  .left-section {
+    margin-right: auto;
+  }
 }
