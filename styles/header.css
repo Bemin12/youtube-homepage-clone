@@ -219,13 +219,14 @@
   cursor: pointer;
 }
 
-@media (min-width: 500px) and (max-width: 656px) {
+@media (max-width: 449px) {
   .header {
     padding-left: 8px;
     padding-right: 8px;
   }
 
-  .search-bar {
+  .search-bar,
+  .hamburger-menu {
     display: none;
   }
 
@@ -250,14 +251,13 @@
   }
 }
 
-@media (max-width: 449px) {
+@media (min-width: 449.02px) and (max-width: 656px) {
   .header {
     padding-left: 8px;
     padding-right: 8px;
   }
 
-  .search-bar,
-  .hamburger-menu {
+  .search-bar {
     display: none;
   }
 

@@ -30,6 +30,10 @@
     background-color: rgb(230, 230, 230);
   }
 
+  .sidebar-link:active {
+    background-color: rgb(220, 220, 220);
+  }
+
   .sidebar-link img {
     height: 24px;
     margin-bottom: 4px;
