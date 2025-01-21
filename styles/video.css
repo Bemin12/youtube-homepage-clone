@@ -128,7 +128,7 @@
   padding: 24px 0px;
 }
 
-@media (min-width: 49px) {
+@media (max-width: 449px) {
   .video-info-grid {
     padding-left: 8px;
   }
