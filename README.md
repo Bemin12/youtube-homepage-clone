@@ -44,7 +44,6 @@ In this project, the following technologies and concepts were used:
   - CSS Grid Layout for the video grid
   - Flexbox for the header and sidebar layout
   - Media queries for responsive design
-  - Custom properties (CSS variables) for consistent styling
   - Pseudo-classes and pseudo-elements (e.g., `:hover`, `:active`)
   - Styling images and icons
   - Positioning elements with `position` property (e.g., `relative`, `absolute`, `fixed`)
