@@ -4,9 +4,9 @@ This project is a clone of the YouTube homepage, created using HTML and CSS. It 
 
 ## Demonstration
 
-![main](https://s13.gifyu.com/images/b2S4n.gif)
+https://github.com/user-attachments/assets/2d4a2f40-9c20-4de0-9187-e0d0e4c93ce7
 
-![main](https://s13.gifyu.com/images/b2S4V.gif)
+https://github.com/user-attachments/assets/3e4e8fea-3f2e-4ac7-9189-43518bad3bfe
 
 ## Project Structure
 
